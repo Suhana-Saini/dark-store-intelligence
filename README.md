@@ -49,6 +49,7 @@ dark-store-intelligence/
 ├── docs/
 │ ├── design.md — data model, planted patterns, event lifecycle
 │ ├── Insights-memos/ —  written few insight memos
+│ ├── notes.md — my own explanations of key design decisions
 │ ├── agent_eval.md — Genie evaluation against my own SQL answers
 │ └── agent_screenshots/
 ├── Notebooks/
