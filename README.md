@@ -15,7 +15,7 @@ whether a natural-language AI agent (Databricks Genie) can answer the same quest
 ## Approach
 
 1. **Generate** a synthetic dataset in Python (Bronze layer): 6 stores, 60 days, ~113K orders,
-   ~970K raw events, with deliberately planted realism — duplicate events, late/out-of-order
+   ~970K raw events, hourly inventory, fruit and veg wastage. with deliberately planted realism — duplicate events, late/out-of-order
    arrivals, missing rider IDs, split orders, and 6 planted operational patterns.
 2. **Clean** it into a Silver layer: deduplicate events, reconstruct one clean timeline per shipment,
    recover recoverable missing values (with every fix flagged, never silently guessed).
