@@ -1,0 +1,2 @@
+Notebooks/** linguist-documentation=true
+*.ipynb linguist-vendored=true
