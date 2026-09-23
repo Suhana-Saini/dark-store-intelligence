@@ -51,7 +51,7 @@ dark-store-intelligence/
 │ ├── Insights-memos/ —  written few insight memos
 │ ├── notes.md — my own explanations of key design decisions
 │ ├── agent_eval.md — Genie evaluation against my own SQL answers
-│ └── agent_screenshots/
+│ └── Agent_Screenshots/
 ├── Notebooks/
 │ ├── 01_generate_data
 │ ├── 02_silver
