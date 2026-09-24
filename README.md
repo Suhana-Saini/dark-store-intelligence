@@ -49,7 +49,7 @@ Python (generator) · Databricks Free Edition (PySpark, Delta, Spark SQL) · SQL
 12-question analysis) · Databricks Genie (AI agent evaluation) · GitHub
 
 ## Repo structure
-'''
+```
 dark-store-intelligence/
 ├── README.md
 ├── docs/
@@ -64,7 +64,7 @@ dark-store-intelligence/
 │ ├── 03_data_quality
 │ ├── 04_gold
 │ └── 05_analysis
-'''
+```
 
 
 ## Data quality
