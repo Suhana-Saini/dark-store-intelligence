@@ -74,6 +74,16 @@ timestamp ordering, referential integrity) — see `Notebooks/03_data_quality`.
 
 ## What I'd do next
 
+- **Move from static to near-real-time.** Right now Gold tables are built by running notebooks manually.
+  The natural next step is Databricks Jobs & Workflows on an hourly schedule, so Gold refreshes on its own —
+  and the agent's answers reflect the last hour of data, not a one-time snapshot. Connecting Genie to a
+  scheduled/streaming source needs more research than a batch table, so this is a planned enhancement.
+- **Add views on top of Gold** for lightweight dashboards, without duplicating data — a natural pairing
+  with the hourly refresh above.
+- **The bigger point behind both:** the goal isn't just fresher data, it's putting fresher data in front of
+  people who aren't SQL users. A store ops lead or a junior analyst could ask a plain-language question
+  and get a current answer, instead of waiting on someone to write a query — which is time and effort saved
+  on both sides, not just a technical upgrade.
 - Add a simple demand forecast baseline for fruit & veg replenishment.
 - Rebuild Silver as a proper Lakeflow pipeline or dbt project with tests.
 - Expand the Genie evaluation to more edge-case and ambiguous questions.
