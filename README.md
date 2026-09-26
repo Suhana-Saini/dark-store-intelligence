@@ -80,13 +80,15 @@ timestamp ordering, referential integrity) — see `Notebooks/03_data_quality`.
   scheduled/streaming source needs more research than a batch table, so this is a planned enhancement.
 - **Add views on top of Gold** for lightweight dashboards, without duplicating data — a natural pairing
   with the hourly refresh above.
-- **The bigger point behind both:** the goal isn't just fresher data, it's putting fresher data in front of
-  people who aren't SQL users. A store ops lead or a junior analyst could ask a plain-language question
-  and get a current answer, instead of waiting on someone to write a query — which is time and effort saved
-  on both sides, not just a technical upgrade.
 - Add a simple demand forecast baseline for fruit & veg replenishment.
 - Rebuild Silver as a proper Lakeflow pipeline or dbt project with tests.
 - Expand the Genie evaluation to more edge-case and ambiguous questions.
+
+**Why this matters more than it sounds:** scheduling and views are technical upgrades, but the actual
+goal behind them is putting fresh data in front of people who aren't SQL users. A store ops lead or a
+junior analyst should be able to ask a plain-language question and get a current answer, instead of
+waiting on someone to write a query. That's time and effort saved on both sides — not just a pipeline
+that runs faster.
 
 ## Limitations
 
